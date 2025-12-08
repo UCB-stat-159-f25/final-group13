@@ -1,0 +1,20 @@
+name: final-group13
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python = 3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - statsmodels
+  - jupyter
+  - jupyter-book
+  - pytest
+  - pip
+  - pip:
+    - yfinance 
+    - tensorflow
+
+#I decided to make this first becasue I realized everytime I made new notebook, I need to install yfinance and tensorflow again, so built this to avoid that

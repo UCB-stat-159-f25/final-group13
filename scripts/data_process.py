@@ -3,8 +3,10 @@ import pandas as pd
 import yfinance as yf
 
 def download_sp500(start_date: str = "1990-01-01", end_date: str = None, ticker: str = "^GSPC"):
-    df = yf.download(ticker, start=start_date, end=end_date)
-    df = df.reset_index().set_index("Date").sort_index()
+    df = yf.download(ticker, start=start_date, end=end_date, auto_adjust = True)
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = df.columns.get_level_values(0)
+    df.columns.name = None
     return df
 
 
@@ -38,6 +40,21 @@ def add_technical_indicators(df: pd.DataFrame):
 
     return df
 
+def make_supervised_frame(df: pd.DataFrame, target_col: str = "Return", horizon: int = 1, lags: int = 1):
+    df = df.copy()
+
+    # Target: horizon-h ahead
+    df["y"] = df[target_col].shift(-horizon)
+
+    # Lagged target(s)
+    for lag in range(1, lags + 1):
+        df[f"{target_col}_lag{lag}"] = df[target_col].shift(lag)
+
+    # Drop rows with NaNs created by shifting
+    df = df.dropna()
+
+    return df
+    
 
 def time_series_split(df: pd.DataFrame, train_frac: float = 0.6, val_frac: float = 0.2):
    
