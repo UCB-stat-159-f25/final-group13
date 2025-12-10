@@ -15,16 +15,16 @@ all:
 pdf:
 
 	myst build notebooks/data_prep_1.ipynb --pdf
-	mv notebooks/_build/exports/data_prep_1.pdf pdf_builds/
-	
+	mv _build/exports/data-prep-1.pdf pdf_builds/
+
 	myst build notebooks/EDA_2.ipynb --pdf
-	mv notebooks/_build/exports/EDA_2.pdf pdf_builds/
-	
+	mv _build/exports/eda-2.pdf pdf_builds/
+
 	myst build notebooks/Model_3.ipynb --pdf
-	mv notebooks/_build/exports/Model_3.pdf pdf_builds/
-	
+	mv _build/exports/model-3.pdf pdf_builds/
+
 	myst build MainNarrative.ipynb --pdf
-	mv _build/exports/MainNarrative.pdf pdf_builds/
+	mv _build/exports/mainnarrative.pdf pdf_builds/
 
 # Cleaning up
 clean:
@@ -32,4 +32,4 @@ clean:
 	rm -rf images/*
 	rm -rf pdf_builds/*
 	rm -rf notebooks/_build
-	rm -rf _build #extra folders but we dont want them for next time, nice trick
+	rm -rf _build
