@@ -1,1 +1,2 @@
 No AI as of now.
+Asked ChatGPT why I kept getting an "Impersonating Error -- Google Chrome 136" for yfinance. It said to update the environment.yml with the specific updates for yfinance and cuff.
