@@ -10,9 +10,6 @@ site:
   nav:
     - "Home: index.md"
     - "Main Narrative: MainNarrative.ipynb"
-    - "README: README.md"
-    - "Data: data/"
-    - "License: LICENSE"
 
 # GitHub Pages deployment
 exports:
