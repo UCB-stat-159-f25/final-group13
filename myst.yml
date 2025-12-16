@@ -10,8 +10,6 @@ project:
   exclude:
     - README.md
     - project-description.md
-    - "*.ipynb"
-    - "!MainNarrative.ipynb"
 
 site:
   template: book-theme
