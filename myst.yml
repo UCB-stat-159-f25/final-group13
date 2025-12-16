@@ -1,5 +1,3 @@
-version: 1
-
 project:
   id: ucb-stat-159-final-group13
   title: "Group 13 Final Project"
@@ -13,9 +11,7 @@ site:
   start: index.md
   nav:
     - file: index.md
-    - title: "Analysis"     
-      children:
-        - file: MainNarrative.ipynb
+    - file: MainNarrative.ipynb
 
 build:
   execute_notebooks: off 
