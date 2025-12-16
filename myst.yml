@@ -24,13 +24,6 @@ project:
 
 site:
   template: book-theme
-  nav:  # Fixed: Move TOC to nav with title/url format
-    - title: "Home"
-      url: "/"
-    - title: "Main Narrative"
-      url: "/MainNarrative"
-    - title: "README"
-      url: "/README"
 
 # version: 1
 
