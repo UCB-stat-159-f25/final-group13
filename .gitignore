@@ -1,7 +1,18 @@
-.ipynb_checkpoints/
-__pycache__/
-*.py[cod]
-*$py.class
-
-
+# MyST build output - REGENERATES on GitHub Actions
 _build/
+build/
+_site/
+
+# Jupyter checkpoints (safe to ignore)
+.ipynb_checkpoints/
+**/*.ipynb_checkpoints/
+
+# Large data files (add your data/ subfolders)
+data/*.csv
+data/*.h5
+data/*.parquet
+
+# Outputs/Logs
+*.log
+logs/
+*.pkl
