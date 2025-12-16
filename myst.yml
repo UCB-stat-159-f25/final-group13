@@ -24,6 +24,11 @@ project:
 
 site:
   template: book-theme
+  start: index.md
+  nav: 
+      - file: index.md
+      - file: MainNarrative.ipynb
+      
 
 # version: 1
 
