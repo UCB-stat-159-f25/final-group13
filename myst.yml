@@ -7,6 +7,11 @@ project:
     - name: Group 13
   github: https://github.com/UCB-stat-159-f25/final-group13
   binder: https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group13/main?urlpath=lab
+  exclude:
+    - README.md
+    - project-description.md
+    - "*.ipynb"
+    - "!MainNarrative.ipynb"
 
 site:
   template: book-theme
