@@ -2,7 +2,7 @@ version: 1
 
 project:
   id: ucb-stat-159-final-group13
-  title: "STAT 159 Final Project - Group 13"
+  title: "Group 13 Final Project"
   authors:
     - name: Group 13
   github: https://github.com/UCB-stat-159-f25/final-group13
@@ -13,7 +13,9 @@ site:
   start: index.md
   nav:
     - file: index.md
-    - file: MainNarrative.ipynb
+    - title: "Main book"
+      children: 
+      - file: MainNarrative.ipynb
 
 build:
   execute_notebooks: off 
