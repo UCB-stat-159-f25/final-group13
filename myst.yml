@@ -13,9 +13,9 @@ site:
   start: index.md
   nav:
     - file: index.md
-    - title: "Main book"
-      children: 
-      - file: MainNarrative.ipynb
+    - title: "Analysis"     
+      children:
+        - file: MainNarrative.ipynb
 
 build:
   execute_notebooks: off 
