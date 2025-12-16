@@ -25,9 +25,11 @@ project:
 site:
   template: book-theme
   start: index.md
-  nav: 
+  nav:
       - file: index.md
       - file: MainNarrative.ipynb
+build:
+  execute_notebooks: off
       
 
 # version: 1
