@@ -1,17 +1,31 @@
+# version: 1
+
+# project:
+#   id: 408c03df-da41-402e-9d5d-adb4754d8063
+#   github: https://github.com/UCB-stat-159-f25/final-group13
+#   title: "STAT 159 Final Project - Group 13"
+
+# site:
+#   template: book-theme
+#   nav:
+#     - "Home: index.md"
+#     - "Main Narrative: MainNarrative.ipynb"
+
+# # GitHub Pages deployment
+# exports:
+#   - format: html
+#     output: _build/html
+
 version: 1
 
 project:
-  id: 408c03df-da41-402e-9d5d-adb4754d8063
-  github: https://github.com/UCB-stat-159-f25/final-group13
   title: "STAT 159 Final Project - Group 13"
+    binder:
+      url: "https://github.com/UCB-stat-159-f25/final-group13"
+  toc:
+    - file: README.md
+    - title: "Main Narrative"
+      file: MainNarrative.ipynb
 
 site:
   template: book-theme
-  nav:
-    - "Home: index.md"
-    - "Main Narrative: MainNarrative.ipynb"
-
-# GitHub Pages deployment
-exports:
-  - format: html
-    output: _build/html
