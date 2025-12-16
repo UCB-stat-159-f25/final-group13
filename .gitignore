@@ -1,18 +1,40 @@
-# MyST build output - REGENERATES on GitHub Actions
+# MyST/PDF BUILDS - REGENERATE AUTOMATICALLY
 _build/
-build/
-_site/
+pdf_builds/
+pdf.builds/
+pdf-builds/
 
-# Jupyter checkpoints (safe to ignore)
-.ipynb_checkpoints/
-**/*.ipynb_checkpoints/
+# IMAGES - REGENERATE FROM NOTEBOOKS
+img/
+images/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
 
-# Large data files (add your data/ subfolders)
+# SCRIPTS OUTPUTS
+scripts/*.csv
+scripts/*.pkl
+scripts/*.npy
+
+# NOTEBOOK SUBFOLDERS - REGENERATE
+notebooks/*.ipynb_checkpoints/
+notebooks/_build/
+
+# DATA - LOAD DYNAMICALLY
 data/*.csv
+data/sp500.csv
+data/*.pkl
 data/*.h5
 data/*.parquet
 
-# Outputs/Logs
+# JUPYTER
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# LOGS
 *.log
 logs/
-*.pkl
