@@ -2,6 +2,8 @@
 
 ## S&P 500 Market Analysis 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17971163.svg)](https://doi.org/10.5281/zenodo.17971163)
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group13/main?urlpath=lab/tree/index.md)
 
 ### Project Overview
